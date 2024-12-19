@@ -1,0 +1,49 @@
+ZI_MO: &ZI_MO 0
+CHU_CHONG: &CHU_CHONG 1
+
+GONG_GANG: &MING_GANG 0
+SI_GANG: &SI_GANG 1
+AN_GANG: &AN_GANG 2
+
+WIN_POINT: 10
+GANG_POINT: 5
+AN_GANG_POINT: 10
+
+members:
+  - name: 东
+    nickname: 东
+
+  - name: 南
+    nickname: 南
+
+  - name: 西
+    nickname: 西
+
+  - name: 北
+    nickname: 北
+
+
+result:
+  is_robbery: False
+
+  who_win: 南
+  win_type: *ZI_MO
+  who_lose:   # menber or none 
+  odds: 3 
+  horses: [南, 东] # menber
+
+  GANG:
+    - type: *MING_GANG
+      who_gang: 西
+      gang_who: 
+
+    - type: *AN_GANG
+      who_gang: 北
+      gang_who: 
+
+    - type: *SI_GANG
+      who_gang: 东
+      gang_who: 南
+    
+
+
